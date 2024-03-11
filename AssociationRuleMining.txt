@@ -1,0 +1,27 @@
+https://github.com/aws-solutions/aws-data-lake-solution
+https://en.wikipedia.org/wiki/HITS_algorithm
+
+C:\\Users\\Public\\Documents\\Association Rule Mining
+https://www.rdocumentation.org/packages/dplyr/versions/1.0.10/topics/group_by
+https://rsanchezs.gitbooks.io/rprogramming/content/chapter9/dplyr.html
+
+https://www.kaggle.com/datasets/vipin20/transaction-data?resource=download
+https://www.kaggle.com/code/vipin20/customer-segmentation-rfm-analysis
+https://www.rdocumentation.org/packages/base/versions/3.6.2/topics/list.files
+https://www.emgywomenscollege.ac.in/templateEditor/kcfinder/upload/files/Beginning%20Data%20Science%20in%20R_%20Data%20Analysis,%20Visualization,%20and%20Modelling%20for%20the%20Data%20Scientist%20(%20PDFDrive%20).pdf
+https://stat.ethz.ch/R-manual/R-devel/library/datasets/html/LakeHuron.html
+
+https://spark.apache.org/documentation.html
+https://espaciocompartir.inap.es/v3/pluginfile.php/3658/mod_resource/content/16/Historia.pdf
+https://dplyr.tidyverse.org/
+https://github.com/rstudio/cheatsheets/blob/main/data-transformation.pdf
+https://dplyr.tidyverse.org/
+https://r4ds.hadley.nz/data-transform
+https://github.com/rstudio/cheatsheets/blob/main/data-transformation.pdf
+
+
+fretting about the lost ring isn't going to help.
+acids that fret at the strongest metals.
+the oceans fretting its shores.
+
+https://github.com/XtianLors/MarketBasketAnalysisExample.git

@@ -15,3 +15,8 @@ summarize(group_by(my_data, "TransactionId"), order.count = n_distinct(Transacti
 
 summarize(group_by(my_data, "ItemCode"), order.count = n_distinct(ItemCode))
 
+d_fromcsv <- data.frame("ItemCode" =my_data$ItemCode, "TransactionId" =my_data$TransactionId)
+head(d_fromcsv)
+write.csv(d_fromcsv, "transIDitemCODE.csv")
+
+

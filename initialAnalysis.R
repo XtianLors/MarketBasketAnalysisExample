@@ -7,7 +7,7 @@
 library(arules)
 library(dplyr)
 
-my_data <- read.csv(".\\archive/transaction_data.csv")
+my_data <- read.csv(".\\archive\\transIDitemCODE.csv")
 
 head(my_data)
 

@@ -34,17 +34,26 @@ class(full_data)
 head(full_data)
 tail(full_data)
 
-retailData <- as_tibble(my_data)
+head(full_data[1,])
+#tail(full_data$)
 
-my_data <- read.csv(path)
-typeof(my_data)
-str(my_data)
-dim(my_data)
-class(my_data)
+#Convert the whole data.table as a tibble
+wholeRetailData <- as_tibble(full_data)
 
-head(my_data)
+#Eliminate the comparison with previous 
+# my_data <- read.csv(path)
+# typeof(my_data)
+# str(my_data)
+# dim(my_data)
+# class(my_data)
+# 
+# head(my_data)
+# tail(my_data)
+# 
+# retailData <- as_tibble(my_data)
 
-retailData <- as_tibble(my_data)
+#Use tibble (dplyr) functions to summarize the appropriate data set for initial
+   # analysis.
 
 summarize(group_by(retailData, "TransactionId"), order.count = n_distinct(TransactionId))
 

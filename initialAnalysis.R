@@ -1,14 +1,20 @@
 # Autor: López Rios Cristian Daniel
 # 11 de Marzo de 2024
 
+#getwd()
 list.files(path=".")
 #install.packages("arules")
 
 library(arules)
 library(dplyr)
 # In order to source we should be in MarketBasketAnalysisExample
-source("./path_value.R")
 
+#We wary, path_value.R should be used to allocate
+   # the data 
+source("./path_value.R")
+library(rlang)
+#env_names(globalenv())
+#sessionInfo()
 #This function helps to identify the data structure and standards used in the data set.
    #This function belongs to data mining since sometimes data doesn't load in a standard way.
    #It is meant to help identify data inconsistencies and format.
@@ -61,6 +67,8 @@ wholeRetailData <- as_tibble(full_data)
 # We should focus on a few variables. Since we care about transactions, lets only
    #use transaction ID and product ID.
 
+#__________________________DATA EXPLORATION_________________________________
+   #Use case and data
 View(wholeRetailData)
 gather()
 
@@ -85,14 +93,68 @@ d_fromcsv <- data.frame("ItemCode" =my_data$ItemCode, "TransactionId" =my_data$T
 head(d_fromcsv)
 write.csv(d_fromcsv, "transIDitemCODE.csv")
 
+#_________________________________ASSOCIATION RULE MINING_________________________________P.13
+#Association rule mining algorithm. This method can be used to 
+# generate the top N product recommendations
+# requested byt he retailer for his cross-selling campaign.
+
 #Weighted Transactions
 
+#Obtaine a table with the unique identifier of the transaction and 
+   # a table with the unique identifier of the products.
+
+
+transaction.obj <- read.transactions(file = subsetPath, 
+                     format="single", sep = ",", 
+                     cols=c("order_id", "product_id"),
+                     rm.duplicate= FALSE,
+                     quote="", skip=0, encoding="unknown")
+
+#_________________________________SUPPORT AND CONFIDENCE THRESHOLDS_________________________________P.26
+
+
+
+
+
+
+
+#_________________________________THE CROSS SELLING CHAMPAIGN_________________________________P.26
+
+
+#LEVERAGE P.33
+
+
+
+#CONVICTION P. 34
+
+
+
+#_________________________________WEIGHTED ASSOCIATION RULE MINING_________________________________P.35
+
+
+
+
+
+
+#_________________________________HYPERLINK-INDUCED TOPIC SEARCH (HITS)_________________________________P.42
+
+
+
+
+#_________________________________NEGATIVE ASSOCIATION RULES_________________________________P.50
+
+
+
+#_________________________________RULES VISUALIZATION_________________________________P.53
 
 # Web App
 
 
 
 
+
+#Glossary
+#Itemset: 
 
 
 

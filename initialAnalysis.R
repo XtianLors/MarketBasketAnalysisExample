@@ -112,10 +112,28 @@ transaction.obj <- read.transactions(file = subsetPath,
 
 #_________________________________SUPPORT AND CONFIDENCE THRESHOLDS_________________________________P.26
 
+#Support is needed to generate the frequent itemsets and the confidence parameter is required to filter the induced 
+#   rules from the frequent itemsets. Support and confidence are broadly called interest measures. There are a lot of
+#   interest measures in addition to support and confidence.
+#   Leverage interest measurement.
+#   read.transactions from arules. Order ID, product ID.
+#1 Find the most frequent transaction, calculate the percentage of transactions.
+transactions.obj <- read.transactions()
+
+# A group of products IDs are called an itemset. Calculate transaction frequency of all itemsets.
 
 
+#Support is a parameter that we pass to this algorithm, a value between 0 and 1.
+#Let's suppose we set the value to 0.1. We now say an itemset is considered frequent, and it should be used in 
+# the subsequent phase if, and only if, it appears in at least 10 percent of the transactions.
+#Discard those values below the support threshold.
+#
 
-
+#https://rpubs.com/joaquin_ar/397172
+#https://mhahsler.github.io/Introduction_to_Data_Mining_R_Examples/book/association-analysis-basic-concepts-and-algorithms.html
+#https://github.com/mhahsler/arules
+#https://es.wikipedia.org/wiki/Viktor_Orb%C3%A1n
+#
 
 
 #_________________________________THE CROSS SELLING CHAMPAIGN_________________________________P.26

@@ -20,9 +20,7 @@ library(rlang)
    #It is meant to help identify data inconsistencies and format.
 readerOfData <- function(path, spitter = FALSE )
 {
-
-   insiderData <- read.csv(path)
-  
+   insiderData <- read.csv(path) 
    if(spitter)
    {
       values <- paste("Type of data: ", typeof(insiderData), "\n",
@@ -33,6 +31,7 @@ readerOfData <- function(path, spitter = FALSE )
    }
    return(paste(values, head(insiderData), tail(insiderData))) 
 }
+
 #readerOfData(rawDataPath, spitter = TRUE)
 
 full_data <- read.csv(rawDataPath)
@@ -96,7 +95,7 @@ write.csv(d_fromcsv, "transIDitemCODE.csv")
 #_________________________________ASSOCIATION RULE MINING_________________________________P.13
 #Association rule mining algorithm. This method can be used to 
 # generate the top N product recommendations
-# requested byt he retailer for his cross-selling campaign.
+# requested by the retailer for his cross-selling campaign.
 
 #Weighted Transactions
 
@@ -111,7 +110,6 @@ transaction.obj <- read.transactions(file = subsetPath,
                      quote="", skip=0, encoding="unknown")
 
 #_________________________________SUPPORT AND CONFIDENCE THRESHOLDS_________________________________P.26
-
 #Support is needed to generate the frequent itemsets and the confidence parameter is required to filter the induced 
 #   rules from the frequent itemsets. Support and confidence are broadly called interest measures. There are a lot of
 #   interest measures in addition to support and confidence.
@@ -128,6 +126,8 @@ transactions.obj <- read.transactions()
 # the subsequent phase if, and only if, it appears in at least 10 percent of the transactions.
 #Discard those values below the support threshold.
 #
+
+
 
 #https://rpubs.com/joaquin_ar/397172
 #https://mhahsler.github.io/Introduction_to_Data_Mining_R_Examples/book/association-analysis-basic-concepts-and-algorithms.html

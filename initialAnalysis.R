@@ -5,6 +5,7 @@
 list.files(path=".")
 #install.packages("arules")
 
+
 library(arules)
 library(dplyr)
 # In order to source we should be in MarketBasketAnalysisExample
